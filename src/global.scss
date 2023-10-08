@@ -1,0 +1,150 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+.d-flex-s {
+    display: flex;
+    justify-content: start;
+}
+.d-block{
+    display: block;
+}
+.d-grid{
+    display: grid;
+}
+
+
+.d-flex-c {
+    display: flex;
+    justify-content: center;
+
+}
+
+.d-flex-col-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.d-flex-e {
+    display: flex;
+    justify-content: end;
+
+}
+
+.d-flex-sb {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.py-1 {
+    padding-top: 1rem;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.p-b0 {
+    padding-bottom: 0;
+}
+
+.bd-header {
+    --background: #AB95F9;
+}
+
+// .p-10{
+//     padding: 8rem 8rem 8rem 8rem;
+
+// }
+
+form {
+    border: 1px solid #F1EDFE;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.px-3 {
+    padding-left: 10px;
+}
+
+.px-5 {
+    padding-left: 25px;
+}
+
+.pl-pr {
+    // padding-left: 18px;
+    padding-right: 18px;
+}
+
+.pl-pr2{
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.plpr-10{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.select-wrapper {
+    display: block !important;
+    position: relative !important;
+    top: 10px !important;
+}
+
+.pt-0{
+    padding-top: 0;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+
+ .pr-10{
+    position: relative;
+    left: 20px;
+ }
+
+ ion-select::part(icon) {
+    display: none;
+  }
+
+.padd-bot{
+    padding-bottom: 12px;
+}
