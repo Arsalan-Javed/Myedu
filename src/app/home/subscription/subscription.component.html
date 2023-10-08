@@ -1,0 +1,223 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar class="bd-header">
+      <ion-title class="logo-txt" >
+        Logo
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-grid >
+    <ion-row class="p-desktop">
+      <ion-col size="12" class="d-flex-c mobi-padding">
+        <form>
+<ion-grid class="p-0">
+  <ion-row>
+    <ion-col class="pl-pr" size-lg="8" size-sm="12" size-xs="12">
+
+      <div class="px-5">
+      <div class="border-botom">
+        <ion-text>
+          <h2  class=" heading-styl mb-0">Subscribe</h2>
+        </ion-text>
+        <ion-text>
+          <p  class=" header-description mt-0">to our Monthly Surprise Box</p>
+        </ion-text>
+      </div>
+    </div>
+
+
+<ion-text>
+  <h2  class="px-5  p-b0 heading-styl mb-0">Contact Information</h2>
+</ion-text>
+
+<ion-row>
+  <ion-col size="12" class="pt-0">
+    <ion-item lines="none">
+      <ion-label position="stacked">Your Name</ion-label>
+      <ion-input placeholder="Osama shah"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col size="12" class="pt-0">
+    <ion-item lines="none">
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input placeholder="Osama@gmail.com"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+
+<ion-text>
+  <h2 class="px-5 heading-styl mb-0"> Child'sInformation</h2>
+</ion-text>
+
+<ion-row class="padd-bot">
+  <ion-col size="12" class="pt-0">
+    <ion-item lines="none">
+      <ion-label position="stacked ">Child's Full Name</ion-label>
+      <ion-input placeholder="Osama shah"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+
+
+<ion-label position="stacked  pr-10">Child's Date of Birth</ion-label>
+  <ion-row class="p-12 pt-0">
+    <ion-col size="4" size-xs="4">
+      <ion-item lines="none" class="ion-select">
+        <ion-select aria-label="fruit" placeholder="Date">
+          <ion-select-option value="apples">1</ion-select-option>
+          <ion-select-option value="oranges">2</ion-select-option>
+          <ion-select-option value="bananas">3</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-icon class="arrow-pos" src="assets/icon/down-arrow.svg"></ion-icon>
+    </ion-col>
+    <ion-col size="4" size-xs="4">
+      <ion-item lines="none" class="ion-select ">
+        <ion-select aria-label="fruit" placeholder="Month">
+          <ion-select-option value="apples">Jan</ion-select-option>
+          <ion-select-option value="oranges">fab</ion-select-option>
+          <ion-select-option value="bananas">Mar</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-icon class="arrow-pos" src="assets/icon/down-arrow.svg"></ion-icon>
+    </ion-col>
+    <ion-col size="4" size-xs="4">
+      <ion-item lines="none" class="ion-select ">
+        <ion-select aria-label="fruit" placeholder="Year">
+          <ion-select-option value="apples">2000</ion-select-option>
+          <ion-select-option value="oranges">1999</ion-select-option>
+          <ion-select-option value="bananas">1998</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-icon class="arrow-pos" src="assets/icon/down-arrow.svg"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+<ion-label position="stacked pr-10">Grade</ion-label>
+<ion-row class="p-12 pt-0">
+  <ion-col size="12">
+    <ion-item lines="none" class="ion-select">
+      <ion-select aria-label="fruit" placeholder="e.g Grade 2">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-icon class="arrow-pos" src="assets/icon/down-arrow.svg"></ion-icon>
+  </ion-col>
+</ion-row>
+
+
+<div >
+  <ion-label position="stacked pr-10">Child's Date of Birth</ion-label>
+  <ion-row class="plpr-10">
+    <ion-col size="6">
+      <ion-input placeholder="Boy"></ion-input>
+      <ion-img class="size arrow-pos" src="assets/images/trailing.png"></ion-img>
+    </ion-col>
+    <ion-col size="6">
+      <ion-input placeholder="Girl"></ion-input>
+      <ion-img class="size arrow-pos" src="assets/images/trailing.png"></ion-img>
+    </ion-col>
+  </ion-row>
+</div>
+
+<div class="pt-18"> 
+<ion-text>
+  <h2 class="px-5 heading-styl mb-0 mt-0">As a parent select any 3 topics</h2>
+</ion-text>
+<ion-row>
+  <ion-col size="12">
+    <ion-button class="btn-topic" [ngClass]="{'active': activeButton === 'Arabic'}" (click)="setActive('Arabic')">Arabic</ion-button>
+    <ion-button class="btn-topic" [ngClass]="{'active': activeButton === 'Islamic'}" (click)="setActive('Islamic')">Islamic</ion-button>
+    <ion-button class="btn-topic" [ngClass]="{'active': activeButton === 'English'}" (click)="setActive('English')">English</ion-button>
+    <ion-button class="btn-topic" [ngClass]="{'active': activeButton === 'History'}" (click)="setActive('History')">History</ion-button>
+    <ion-button class="btn-topic" [ngClass]="{'active': activeButton === 'Sports'}" (click)="setActive('Sports')">Sports</ion-button>
+  </ion-col>
+</ion-row>
+</div>
+
+
+<ion-row>
+  <ion-col size="12">
+    <ion-button routerLink="subscription" class="payment-btn desktop-button">Continue to payment</ion-button>
+  </ion-col>
+</ion-row>
+    </ion-col>
+
+
+    <!-- second one -->
+    <ion-col size-lg="4" size-sm="12" size-xs="12" style="background-color: #F1EDFE;">
+
+      <ion-row>
+        <ion-col size="12" class="p-14">
+          <ion-text>
+            <h2 class="heading-styl mb-0">Summary</h2>
+          </ion-text>
+            <ion-text>
+              <p class="header-description mt-0">of your Monthly Surprise Box</p>
+            </ion-text>
+    
+            <ion-row>
+              <ion-col size="12"  style="background: #fff; padding: 16px 16px 40px 16px; border-radius: 8px;">
+            <div class="d-flex-sb">
+              <ion-text class="mystery-box">Mystery Box</ion-text>
+              <ion-text><span class="sar-txt">SAR</span> <span class="text-r-b">456</span></ion-text>
+            </div>
+              <div class="d-flex-sb">
+                <ion-text class="free-txt">X 1</ion-text>
+                <ion-text class="free-txt">Monthly</ion-text>
+              </div>
+    
+              </ion-col>
+            </ion-row>
+        
+    
+            <div style="border-bottom: 1px solid #D1C5FB;">
+            <div class="d-flex-sb py-1">
+              <ion-text class="txt-l">Subtotal</ion-text>
+              <ion-text><span class="sar-txt">SAR</span> <span class="text-r-b">456</span></ion-text>
+            </div>
+              <div class="d-flex-sb py-1">
+                <ion-text class="txt-l">Shipping</ion-text>
+                <ion-text class="free-txt">Free</ion-text>
+              </div>
+              <div class="d-flex-sb py-1 pb-1">
+                <ion-text class="txt-l">Taxes</ion-text>
+                <ion-text> <span class="sar-txt">SAR</span> <span class="text-r-b">4.0</span></ion-text>
+              </div>
+            </div>
+    
+              <div class="d-flex-sb py-1">
+                <ion-text class="txt-l-b">Total</ion-text>
+                <ion-text><span class="sar-txt">SAR</span> <span class="text-r-b">460</span></ion-text>
+              </div>
+        </ion-col>
+      </ion-row>
+
+
+          
+  <ion-row>
+    <ion-col size="12">
+      <ion-button routerLink="subscription " class="payment-btn mobile-button pr-5">Continue to payment</ion-button>
+    </ion-col>
+  </ion-row>
+    </ion-col>
+
+
+  </ion-row>
+
+</ion-grid>
+
+</form>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
