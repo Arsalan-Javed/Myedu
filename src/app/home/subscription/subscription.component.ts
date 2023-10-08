@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-subscription',
@@ -11,8 +12,12 @@ export class SubscriptionComponent  implements OnInit {
   setActive(topic: string) {
     this.activeButton = topic;
   }
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {}
+
+  redirectToHome(){
+    this.route.navigate(['home'])
+  }
 
 }
