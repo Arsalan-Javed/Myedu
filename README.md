@@ -1,2 +1,2 @@
-# design-assignment
+# Ionic Design Assignment
  
